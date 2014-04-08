@@ -63,7 +63,7 @@ $(document).bind('pageinit', function() {
 $( "#button2" ).bind( "click", function(event, ui) {
 alert("Posting a new quote");
 var jsonUrl = "http://secure-escarpment-5809.herokuapp.com//quote";
-var newQuote = { "author" : "#text2", "text" : "#text3" };
+var newQuote = { "author" : $("#text2").val(), "text" : $("#text3").val() };
 $.post(jsonUrl,newQuote, function(data) {
 	alert("Added " + data.author + " " + data.text);
 }, 'json');
