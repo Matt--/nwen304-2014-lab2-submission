@@ -29,6 +29,8 @@
 	</div><!-- /content -->
 
 	<label for="text-2">Add a new quote:</label>
+   <input name="text-2" id="text2" value="Author" type="text">
+   <input name="text-3" id="text3" value="Author's quote" type="text">
 	 <input type="submit" value="Submit Button" id="button2" />
 
 
@@ -61,7 +63,7 @@ $(document).bind('pageinit', function() {
 $( "#button2" ).bind( "click", function(event, ui) {
 alert("Posting a new quote");
 var jsonUrl = "http://secure-escarpment-5809.herokuapp.com//quote";
-var newQuote = { "author" : "foo", "text" : "some text" };
+var newQuote = { "author" : "#text2", "text" : "#text3" };
 $.post(jsonUrl,newQuote, function(data) {
 	alert("Added " + data.author + " " + data.text);
 }, 'json');
