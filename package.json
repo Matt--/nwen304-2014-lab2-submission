@@ -1,0 +1,15 @@
+{
+  "name": "lab2Submission",
+  "version": "0.0.0",
+  "description": "NWEN304 lab 2 - submission",
+  "main": "quote.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "express": "^3.5.1"
+  }
+}
